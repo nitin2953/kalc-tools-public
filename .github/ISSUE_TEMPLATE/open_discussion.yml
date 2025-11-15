@@ -1,0 +1,26 @@
+name: 💬 Casual Question & Discussion
+description: Post casual questions or general, non-serious feedback here.
+title: "[DISCUSSION] <your question or topic>"
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Want to ask something casual, give general feedback, or discuss Kalc Tools?
+        Use this template for open-ended participation!
+  - type: textarea
+    id: topic
+    attributes:
+      label: What's on your mind?
+      description: Share your thoughts, questions, or anything not covered by other templates.
+      placeholder: "e.g. Do you have plans for mobile apps? Why did you choose the name Kalc?"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Comments
+      description: Add anything else you'd like!
+      placeholder: "Other feedback?"
+    validations:
+      required: false
