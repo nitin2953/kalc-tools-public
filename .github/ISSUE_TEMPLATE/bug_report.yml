@@ -1,0 +1,62 @@
+name: 🐞 Bug Report
+description: If something isn't working as expected in Kalc Tools, please let us know!
+title: "[BUG] <short bug description>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for helping us improve Kalc Tools!
+        Please fill in the details below to report a bug.
+  - type: input
+    id: summary
+    attributes:
+      label: Brief Bug Summary
+      description: Describe the issue in one short sentence.
+      placeholder: "e.g. Percentage calculator gives wrong result"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Give detailed steps so we can reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Enter '...'
+        3. Click '...'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: "The calculator should show the correct percentage."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include info like device, browser, OS if relevant.
+      placeholder: "Windows 11 • Chrome 115"
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Attachments
+      description: Drag and drop images/files for clarification (optional).
+      placeholder: "Attach files below."
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Details
+      description: Add any other information that may help.
+      placeholder: "Anything else?"
+    validations:
+      required: false
