@@ -1,0 +1,41 @@
+name: 💡 Feature / Tool Request
+description: Suggest a new feature or tool for Kalc Tools!
+title: "[REQUEST] <short feature/tool description>"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Suggest a feature or a new calculator/tool for Kalc Tools!
+  - type: input
+    id: summary
+    attributes:
+      label: Brief Description
+      description: Short summary of your feature or tool idea.
+      placeholder: "e.g. Add a Mortgage Calculator"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Explain your idea in detail. How should it work?
+      placeholder: "The mortgage calculator should..."
+    validations:
+      required: true
+  - type: textarea
+    id: user_story
+    attributes:
+      label: Problem it Solves or Value
+      description: Why would this feature/tool be helpful?
+      placeholder: "Users will be able to..."
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Information
+      description: Anything else about your request?
+      placeholder: "Design references, links, etc."
+    validations:
+      required: false
